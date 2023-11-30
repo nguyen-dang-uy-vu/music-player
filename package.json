@@ -1,0 +1,48 @@
+{
+  "name": "music-player",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "git secrets --scan && yarn lint:js && yarn lint:style",
+    "lint:js": "eslint --ext \".vue,.js\" --ignore-path .gitignore .",
+    "lint:style": "stylelint \"**/*.{vue,scss,css}\" --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@foobar404/wave": "^2.0.4",
+    "core-js": "^3.8.3",
+    "element-ui": "^2.15.14",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2",
+    "wavesurfer.js": "^7.4.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@iconify/vue2": "^2.1.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "autoprefixer": "^10.4.16",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "node-sass": "^9.0.0",
+    "prettier": "^2.4.1",
+    "stylelint": "13.13.1",
+    "stylelint-config-prettier": "8.0.2",
+    "stylelint-config-standard": "22.0.0",
+    "stylelint-scss": "3.19.0",
+    "tailwindcss": "^3.3.5",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

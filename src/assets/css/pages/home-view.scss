@@ -1,0 +1,29 @@
+.home-view {
+  @apply h-screen bg-gray-950;
+
+  &__media {
+    @apply bg-gray-950 text-red left-0 bottom-0 w-full;
+  }
+
+  &__wave-effect {
+    // transform: rotate(180deg);
+  }
+
+  &__time-line {
+    @apply bg-gray-950 cursor-pointer relative px-5;
+
+    &:hover {
+      .home-view__time-line__hover {
+        @apply opacity-100;
+      }
+    }
+
+    &__hover {
+      z-index: 9999;
+      background: rgba(255, 255, 255, 0.5);
+      transition: opacity 0.2s ease;
+
+      @apply absolute left-0 top-0 pointer-events-none h-full w-0 mix-blend-overlay opacity-0;
+    }
+  }
+}

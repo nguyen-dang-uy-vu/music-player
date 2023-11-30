@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Material+Icons+Outlined|Material+Icons+Round');
+/* stylelint-disable value-keyword-case */
+// $font-default: 'Noto Sans JP', '游ゴシック', 'Yu Gothic', YuGothic, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro',
+//   'ＭＳ Ｐゴシック', 'MS P Gothic', Osaka, sans-serif;
+$font-default: 'Noto Sans JP';
+$font-monospace: monospace, monospace;
+
+$breakpoints: (
+  'xs': (
+    max-width: 767.98px,
+  ),
+  'sm': (
+    min-width: 768px,
+  ),
+  'md': (
+    min-width: 991px,
+  ),
+  'lg': (
+    min-width: 1200px,
+  ),
+) !default;
+
+:root {
+  --header-height: 60px;
+  --header-section: 60px;
+  --sidebar-width: 180px;
+  --section-right: 345px;
+  --chat-box-height: 200px;
+  --font-icon-outline: 'Material Icons Outlined';
+  --font-icon-rounded: 'Material Icons Round';
+}
